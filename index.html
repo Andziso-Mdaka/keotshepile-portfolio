@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keotshepile Ndimande | Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS (Fixed Path) -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <canvas id="matrix"></canvas>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Keotshepile Ndimande</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                <li class="nav-item"><a class="nav-link" href="#career">Career Interests</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Navbar Spacer -->
+<div style="height: 100px;"></div>
+
+<!-- Profile Section -->
+<section class="container text-center py-4" data-aos="fade-up" data-aos-duration="1000">
+    <!-- Profile Image -->
+    <img src="assets/ras.jpeg" alt="Keotshepile Ndimande" class="profile-img">
+
+    <h1 class="fw-bold text-white mt-4">Keotshepile Ndimande</h1>
+    <h4 class="text-info mb-3">Software & Cybersecurity Graduate</h4>
+
+    <div class="about-box mx-auto">
+        <p class="mb-0">
+            Certified Microsoft Security Operations Analyst and Azure Security Engineer with a strong foundation in Cybersecurity and Software Development. Combines hands-on experience in full-stack MERN engineering with practical network administration, infrastructure hardening, and Role-Based Access Control (RBAC) deployment. Passionate about leveraging secure software development, cloud security, and threat mitigation to build resilient enterprise applications and modern cloud environments.
+        </p>
+    </div>
+
+    <div class="mt-4">
+        <!-- CV Download -->
+        <a href="assets/Keotshepile_Ndimande_CV_F.pdf.pdf" class="btn btn-info btn-lg me-3" download>
+            <i class="fas fa-download me-2"></i>Download CV
+        </a>
+        <a href="https://github.com/JoyNdimande" target="_blank" class="btn btn-outline-light">
+            <i class="fab fa-github me-2"></i>GitHub
+        </a>
+    </div>
+</section>
+
+<!-- Cards Highlight Section -->
+<section class="container mt-5 py-5 section-box" data-aos="fade-up" data-aos-delay="200">
+    <div class="row text-center">
+        <!-- Projects Card -->
+        <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="300">
+            <img class="rounded-circle mb-3" src="assets/projects.webp.webp" alt="Projects" width="150" height="150">
+            <h4>Projects</h4>
+            <p>Penetration testing, secure coding, and ethical hacking assignments I’ve worked on.</p>
+            <a class="btn btn-secondary" href="#projects">View Details</a>
+        </div>
+
+        <!-- Skills Card -->
+        <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="400">
+            <img class="rounded-circle mb-3" src="assets/skills.webp.webp" alt="Skills" width="150" height="150">
+            <h4>Skills</h4>
+            <p>Network security, cryptography, cloud security, penetration testing, security tools.</p>
+            <a class="btn btn-secondary" href="#skills">View Details</a>
+        </div>
+
+        <!-- Certifications Card -->
+        <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="500">
+            <img class="rounded-circle mb-3" src="assets/certificate.webp.webp" alt="Certifications" width="150" height="150">
+            <h4>Certifications</h4>
+            <p>CEH, CompTIA Security+, CISSP, OSCP (current & future) etc.</p>
+            <a class="btn btn-secondary" href="#certifications">View Details</a>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="container section-box" data-aos="fade-right">
+    <h3>Skills</h3>
+    <div class="row">
+        <div class="col-md-4">
+            <h5>Programming</h5>
+            <ul>
+                <li>Java / C# / Python</li>
+                <li>Object-Oriented Programming</li>
+                <li>Problem Solving</li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <h5>Software Development</h5>
+            <ul>
+                <li>HTML, CSS, Bootstrap</li>
+                <li>Databases & SQL</li>
+                <li>Git & GitHub</li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <h5>Cybersecurity</h5>
+            <ul>
+                <li>Network Security</li>
+                <li>Penetration Testing</li>
+                <li>Kali Linux, Wireshark, Burp Suite</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="container section-box" data-aos="fade-left">
+    <h3>Projects</h3>
+    <p>Selected academic and personal projects demonstrating development and security skills.</p>
+    <a href="https://github.com/JoyNdimande" target="_blank" class="btn btn-secondary">View Repositories on GitHub</a>
+</section>
+
+<!-- Education Section -->
+<section id="education" class="container section-box" data-aos="fade-right">
+    <h3>Education</h3>
+    <ul>
+        <li><strong>Year 1:</strong> Programming Foundations</li>
+        <li><strong>Year 2:</strong> Software Development</li>
+        <li><strong>Year 3:</strong> Cybersecurity</li>
+    </ul>
+</section>
+
+<!-- Certifications Section -->
+<section id="certifications" class="container section-box" data-aos="fade-up">
+    <h3 class="text-center mb-5">Professional Certifications</h3>
+    <div class="row">
+        <!-- MICT SETA Certifications -->
+        <div class="col-lg-6 mb-4" data-aos="flip-left">
+            <div class="card bg-dark text-white border-info h-100">
+                <div class="card-body">
+                    <h4 class="text-info mb-3">
+                        <i class="fas fa-graduation-cap me-2"></i>MICT SETA & CTU Qualifications
+                    </h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-check-circle text-info me-2"></i>National Certificate: IT – Systems Development</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-info me-2"></i>IT – Database Development</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-info me-2"></i>FET Certificate: IT – Systems Development</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Microsoft Certifications -->
+        <div class="col-lg-6 mb-4" data-aos="flip-right">
+            <div class="card bg-dark text-white border-info h-100">
+                <div class="card-body">
+                    <h4 class="text-info mb-3">
+                        <i class="fab fa-microsoft me-2"></i>Microsoft Certifications
+                    </h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-shield-alt text-info me-2"></i>Security Operations Analyst (SC-200)</li>
+                        <li class="mb-2"><i class="fas fa-cloud text-info me-2"></i>Azure Security Technologies (AZ-500)</li>
+                        <li class="mb-2"><i class="fas fa-code text-info me-2"></i>Developing Solutions for Azure (AZ-204)</li>
+                        <li><i class="fas fa-database text-info me-2"></i>Azure Data Fundamentals (DP-900)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Career Interests Section -->
+<section id="career" class="container section-box" data-aos="fade-up">
+    <h3>Career Interests</h3>
+    <ul>
+        <li>Graduate Software Developer</li>
+        <li>Junior Software Engineer</li>
+        <li>Cybersecurity Analyst / SOC Analyst</li>
+        <li>DevSecOps (Entry Level)</li>
+    </ul>
+</section>
+
+<footer class="bg-dark text-white mt-5 py-4">
+    <div class="container text-center">
+        <p>&copy; 2026 Keotshepile Ndimande</p>
+        <a href="https://github.com/JoyNdimande" class="text-white me-3"><i class="fab fa-github"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:Keotshepilendimande@gmail.com" class="text-white"><i class="fas fa-envelope"></i></a>
+    </div>
+</footer>
+
+<!-- Scroll to Top Button -->
+<button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- AOS Animation JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    // Initialize Scroll Animations
+    AOS.init({
+        duration: 800, // Animation duration in milliseconds
+        once: true,    // Whether animation should happen only once while scrolling down
+        offset: 100    // Offset (in px) from the original trigger point
+    });
+
+    // Matrix Background Logic
+    const canvas = document.getElementById("matrix");
+    const ctx = canvas.getContext("2d");
+    const letters = "01ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+    const fontSize = 16;
+    let columns;
+    let drops;
+
+    function setupMatrix() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        columns = Math.floor(canvas.width / fontSize);
+        drops = [];
+        for (let i = 0; i < columns; i++) {
+            drops[i] = Math.random() * (canvas.height / fontSize);
+        }
+    }
+
+    setupMatrix();
+
+    function draw() {
+        ctx.fillStyle = "rgba(13,17,23,0.05)";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = "#00eaff";
+        ctx.font = fontSize + "px monospace";
+
+        for (let i = 0; i < drops.length; i++) {
+            const text = letters.charAt(Math.floor(Math.random() * letters.length));
+            ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+            if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                drops[i] = 0;
+            }
+            drops[i]++;
+        }
+    }
+
+    setInterval(draw, 35);
+    window.addEventListener("resize", setupMatrix);
+
+    // Scroll to Top Button Logic
+    let mybutton = document.getElementById("scrollTopBtn");
+    window.onscroll = function() {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    };
+
+    function scrollToTop() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+</script>
+</body>
+</html>
